@@ -1,0 +1,12 @@
+@import '../styles/_variables.scss';
+
+.Pagination {
+  text-align: center;
+  margin: 10px;
+  .Page {
+    font-size: 22px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 20px;
+  }
+}

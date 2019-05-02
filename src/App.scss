@@ -1,0 +1,59 @@
+@import './styles/_variables.scss';
+body {
+  background: $SFMBlack;
+  color: $SFMWhite;
+}
+.App {
+  // main font
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 30px; // footer
+
+  // links
+  a {
+    color: inherit;
+  }
+
+  // headers
+  h1 {
+    color: $SFMGrey-2;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $SFMGrey-2;
+  }
+
+  // buttons
+  .btn {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s all;
+    text-transform: uppercase;
+    color: $SFMBlack;
+    border: 2px solid $SFMWhite;
+    &:hover {
+      color: $SFMWhite;
+      background: transparent;
+    }
+    &.btn-primary {
+      background: $SFMRed;
+      color: $SFMWhite;
+      border: 2px solid $SFMRed;
+      &:hover {
+        background: transparent;
+        color: $SFMRed;
+      }
+    }
+    &.btn-secondary {
+      background: transparent;
+      border: 2px solid $SFMRed;
+      color: $SFMRed;
+      &:hover {
+        background: $SFMRed;
+        color: $SFMWhite;
+      }
+    }
+  }
+}

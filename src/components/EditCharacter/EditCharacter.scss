@@ -1,0 +1,23 @@
+@import '../../styles/_variables.scss';
+.EditCharacter {
+  &-content {
+    display: flex;
+    flex-direction: row;
+    &-left {
+      .Character {
+        width: 270px;
+        &-wrapper {
+          &:hover {
+            transform: none;
+          }
+        }
+      }
+    }
+    &-right {
+      margin: 10px;
+      background: $SFMGrey-2;
+      padding: 10px;
+      flex: 1;
+    }
+  }
+}

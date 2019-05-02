@@ -1,0 +1,32 @@
+@import '../../styles/_variables.scss';
+
+.Loading {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: $SFMBlack;
+  text-align: center;
+
+  &.fullscreen {
+    position: fixed;
+  }
+
+  &-wrapper {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100px;
+    }
+    &-texto {
+      color: $SFMWhite;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}

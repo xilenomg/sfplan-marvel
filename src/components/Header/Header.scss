@@ -1,0 +1,39 @@
+@import '../../styles/_variables.scss';
+
+.Header {
+  background: $SFMGrey-1;
+  font-family: 'Raleway', sans-serif;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &-right {
+    a {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  img {
+    width: 100px;
+  }
+}
+
+@media screen and(min-width: $break-point-phone) {
+  .Header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &-right {
+      a {
+        display: initial;
+        margin-left: 5px;
+      }
+    }
+    img {
+      width: 100px;
+    }
+  }
+}

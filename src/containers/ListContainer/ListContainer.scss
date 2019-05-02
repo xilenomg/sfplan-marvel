@@ -1,0 +1,44 @@
+@import '../../styles/_variables.scss';
+
+.ListContainer {
+  padding: 10px 5px;
+  position: relative;
+  &-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #cecece;
+    &-item {
+      width: 100%;
+      .Character {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: $break-point-phone) {
+  .ListContainer {
+    &-list {
+      &-item {
+        width: 50%;
+        .Character {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: $break-point-tablet) {
+  .ListContainer {
+    &-list {
+      &-item {
+        width: 25%;
+        .Character {
+          flex-basis: 25%;
+        }
+      }
+    }
+  }
+}
